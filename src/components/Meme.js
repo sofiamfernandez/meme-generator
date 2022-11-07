@@ -26,7 +26,7 @@ const textMeme = (e) => {
 
 const Download = (e) => {
     html2canvas(document.querySelector("#exportar")).then(function(canvas) {
-        {/*document.body.appendChild(canvas);*/}
+    
         let img = canvas.toDataURL("memes/jpg");
         let link = document.createElement("a");
         link.download = "tumeme.jpg";
