@@ -52,10 +52,9 @@ const Download = (e) => {
                 <option value={2}>Futurama</option>
                 <option value={3}>Bob Esponja</option>
                 <option value={4}>Nena picarona</option>
-            </Form.Select>
-            
-      
-            <Figure className="text-center"  id="exportar">
+            </Form.Select>   
+        
+            <Figure className="text-center w-100"  id="exportar">
                 <Figure.Caption >
                      <p className="texto-meme w-100 px-30 position-absolute top-60 start-30  h1 text-center ">{text}</p> 
                 </Figure.Caption>
@@ -64,7 +63,6 @@ const Download = (e) => {
                      src={`../images/${meme}.jpg`} 
                      className="img-fluid img-responsive mt-3 d-block m-auto" alt="meme">
                 </Figure.Image>
-                
             </Figure>
                  
         </Form>
