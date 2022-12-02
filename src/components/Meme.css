@@ -1,12 +1,13 @@
-.texto-meme {
+#texto-meme {
     width: 80%;
     padding-top: 40px;
     text-align: center;
     font-family: impact, sans-serif;
-    font-size: 2em;
+    font-size: 3em;
+   
     text-transform: uppercase;
     letter-spacing: 1px;
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
       -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
       2px 2px 5px #000;
-  }
+}
