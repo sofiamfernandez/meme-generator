@@ -7,15 +7,16 @@ import "./Header.css"
 export const Header = () => {
   return (
     <>
+
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
             <img
-              alt=""
-              src="../images/meme-logo-1.jpg"
+              alt="logo"
+              src="../images/image.png"
               width="40"
               height="30"
-              className="d-inline-block align-top"
+              className="img-responsive img-fluid"
             />{' '}
             Meme Generator
           </Navbar.Brand>
