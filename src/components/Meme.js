@@ -26,7 +26,7 @@ const [text, setText] = useState();
 const [color, setColor] =useState('#FFFFFF');
 const [size, setSize] = useState('');
 const [positionY, setPositionY] = useState('');
-const [positionX, setPositionX] = useState('');
+const [positionX, setPositionX] = useState({paddingLeft:'0'});
 
 
 const selectMeme = (e) => {
@@ -45,8 +45,8 @@ const myStyle = {
     paddingTop : parseInt(size),
     paddingLeft: parseInt(positionX),
  
-
 }
+console.log(positionX);
 
 const Download = (e) => {
     html2canvas(document.querySelector("#exportar")).then(function(canvas) {
