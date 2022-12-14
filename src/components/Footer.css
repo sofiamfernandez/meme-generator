@@ -50,3 +50,11 @@ a.link:hover {
 .firma:hover {
     color:#F10086;
 }
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .text, .footer-text {
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+}
