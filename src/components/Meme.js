@@ -26,7 +26,7 @@ const [text, setText] = useState();
 const [color, setColor] =useState('#FFFFFF');
 const [size, setSize] = useState('');
 const [positionY, setPositionY] = useState('');
-const [positionX, setPositionX] = useState({paddingLeft:'0'});
+const [positionX, setPositionX] = useState('');
 
 
 const selectMeme = (e) => {
