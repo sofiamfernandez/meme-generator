@@ -34,6 +34,9 @@ h1.title span {
 }
 h2{
   color: #F582A7;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 p {
   font-family: 'Poppins', sans-serif;

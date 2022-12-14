@@ -62,9 +62,9 @@ const Download = (e) => {
 }
 
   return (
-    <Container className='my-5'>
+    <Container className=''>
         <Row>
-        <h1 className='mt-3 mb-3 text-center title'><span>Crea tu propio meme</span></h1>
+        <h1 className='my-5 text-center title'><span>Crea tu propio meme</span></h1>
             <Col sm={12} md={6}>
               
               <Form className='text-center p-3'>
@@ -196,6 +196,6 @@ const Download = (e) => {
           </div>
           </Col>
         </Row>  
-    </Container> // se quita para no generar código innecesario
+    </Container> 
   )
 }

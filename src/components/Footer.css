@@ -6,9 +6,10 @@ footer {
 
 .text {
     font-family: 'Inter', sans-serif;
-    font-size: 1.5em;
-    color: white;
-    padding-left: 1rem;
+    font-size: 1em;
+    align-items: center;
+    color: #DFCDDB;
+    
 }
 .redes {
      display: flex;
@@ -37,5 +38,15 @@ a.link:hover {
     color:aliceblue;
     background: linear-gradient(to right, #711A75, #F10086);
     box-shadow:  2px 5px 5px rgb(245, 130, 167, 0.4);
-  
+}
+.footer-text {
+    color: #DFCDDB;
+}
+.firma  {
+    color: #DFCDDB;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.firma:hover {
+    color:#F10086;
 }
