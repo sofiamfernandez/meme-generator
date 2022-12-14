@@ -27,7 +27,7 @@ const [color, setColor] =useState('#FFFFFF');
 const [size, setSize] = useState('');
 const [positionY, setPositionY] = useState('');
 const [positionX, setPositionX] = useState('');
-const [positionR, setPositionR] = useState('');
+
 
 const selectMeme = (e) => {
     setMeme(e.target.value);
@@ -43,8 +43,8 @@ const myStyle = {
     color:color,
     fontSize : parseInt(positionY),
     paddingTop : parseInt(size),
-    paddingRight: parseInt(positionX),
-    paddingLeft:parseInt(positionR)
+    paddingLeft: parseInt(positionX),
+ 
 
 }
 
@@ -126,29 +126,19 @@ const Download = (e) => {
                          
                       ></Form.Range>
                       
-                      <Form.Label htmlFor="customRange2" className="form-label">Elige la posición horizontal <BsArrowRight/></Form.Label>
+                      <Form.Label htmlFor="customRange2" className="form-label">Elige la posición horizontal <BsArrowLeft/> <BsArrowRight/></Form.Label>
 
                       <Form.Range
                           type="range"
-                          min={0}
-                          max={360}
+                          min={-100}
+                          max={280}
                           id="customRange2"
                           value={positionX}
                           onChange={(e) => setPositionX(e.target.value)}
                           step={1}
                       ></Form.Range>
 
-                        <Form.Label htmlFor="customRange2" className="form-label">Elige la posición horizontal izquierda <BsArrowLeft/> </Form.Label>
 
-                        <Form.Range
-                            type="range"
-                            min={0}
-                            max={360}
-                            id="customRange2"
-                            value={positionR}
-                            onChange={(e) => setPositionR(e.target.value)}
-                            step={1}
-                        ></Form.Range>
 
                         <Form.Label htmlFor="customRange2" className="form-label">Elige la posición vertical <BsArrowDownUp/></Form.Label>
 

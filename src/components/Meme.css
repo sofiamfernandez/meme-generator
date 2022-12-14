@@ -7,7 +7,6 @@
   src: url('/public/fonts/Poppins.ttf');
 }
 
-
 body  {
   overflow-x: hidden;
   min-height: 100vh;
@@ -115,9 +114,9 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 
 #texto-meme {
-    width: auto;
+    /* width: auto; */
     padding-top: 20px;
-    /* padding-left: 10px; */
+    /* padding-left: -100px;  */
     font-family: impact, sans-serif;
     font-size: 3em;
     text-transform: uppercase;
