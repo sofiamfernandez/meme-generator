@@ -68,7 +68,7 @@ const Download = (e) => {
             <Col sm={12} md={6}>
               
               <Form className='text-center p-3'>
-              <Form.Label className='mt-3 mb-3 '>Selecciona una imagen: </Form.Label>
+              <Form.Label className='mb-3 '>Selecciona una imagen: </Form.Label>
                   <Form.Select onChange={selectMeme} className='form-control form-select form-select-lg mb-3 w-100 m-auto' arial-label="dark">
                       <option value={0}>Seleccionar imagen</option>
                       <option value={1}>Dicaprio</option>

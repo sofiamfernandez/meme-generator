@@ -11,7 +11,7 @@ export const Footer = () => {
     <Container fluid className='bg-dark mt-3 d-flex mb-0 w-100'>
             <Container>
                 <Row>
-                    <Col className='brand text py-3'>
+                    <Col sm={12} className='brand text py-3'>
                         <img
                             alt="logo"
                             src="../images/image.png"
@@ -21,7 +21,7 @@ export const Footer = () => {
                         />{''}
                       Meme Generator
                     </Col>
-                    <Col className='redes'>
+                    <Col sm={12} className='redes'>
                         <div className='social d-flex align-items-center '>
                             <a href='https://www.linkedin.com/in/sofia-m-fernandez-lacroux/' target="_blank" rel="noopener noreferrer" className='link'> <BsLinkedin/></a>
                             <a href='https://github.com/sofiamfernandez' target="_blank" rel="noopener noreferrer" className='link'><BsGithub/></a>
@@ -29,7 +29,7 @@ export const Footer = () => {
                            
                        </div>
                     </Col>
-                    <Col className='justify-content-end d-flex align-items-center footer-text'>Powered with React
+                    <Col sm={12} className='justify-content-end d-flex align-items-center footer-text'>Powered with React
                    
                     by 
                     <a className='firma' href='www.sofiamfernandez.com' target="_blank" rel="noopener noreferrer">
