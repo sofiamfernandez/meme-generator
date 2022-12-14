@@ -166,7 +166,7 @@ const Download = (e) => {
                <div id="exportar">
                   <Figure.Caption>
                       <p
-                          className="position-absolute top-60 m-auto"
+                          className="position-absolute w-100"
                           id="texto-meme"
                           style={myStyle}
 
