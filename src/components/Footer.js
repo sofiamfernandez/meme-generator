@@ -32,7 +32,7 @@ export const Footer = () => {
                     <Col md={4} sm={12} className='justify-content-center d-flex align-items-center footer-text py-3'>Powered with React
                    
                     by 
-                    <a className='firma' href='www.sofiamfernandez.com' target="_blank" rel="noopener noreferrer">
+                    <a className='firma' href='https://www.sofiamfernandez.com/' target="_blank" rel="noopener noreferrer">
                     <span className='firma px-1'>Sophie Ferdz <SiReact/></span></a>
                     </Col>
                 </Row>
