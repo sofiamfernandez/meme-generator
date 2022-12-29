@@ -41,8 +41,8 @@ const textMeme = (e) => {
 
 const myStyle = {
     color:color,
-    fontSize : parseInt(positionY),
-    paddingTop : parseInt(size),
+    fontSize : parseInt(size),
+    paddingTop : parseInt(positionY),
     paddingLeft: parseInt(positionX),
  
 }
@@ -120,8 +120,8 @@ const Download = (e) => {
                           min={10}
                           max={120}
                           id="customRange2"
-                          value={positionY}
-                          onChange={(e) => setPositionY(e.target.value)}
+                          value={size}
+                          onChange={(e) => setSize(e.target.value)}
                           step={1}
                          
                       ></Form.Range>
@@ -147,8 +147,8 @@ const Download = (e) => {
                             min={-100}
                             max={400}
                             id="customRange2"
-                            value={size}
-                            onChange={(e) => setSize(e.target.value)}
+                            value={positionY}
+                            onChange={(e) => setPositionY(e.target.value)}
                             step={1}
                         ></Form.Range>
 
@@ -161,8 +161,8 @@ const Download = (e) => {
           {/* Breakpoint     */}
         <Col sm={12} md={6}>
         <Form>
-          <h2 className='text-center mt-3 mb-3'>Vista previa de tu meme: </h2>
-            <Figure className="text-center w-100">
+          <h2 className=' mt-3 mb-3'>Vista previa de tu meme: </h2>
+            <Figure className="w-100">
                <div id="exportar">
                   <Figure.Caption>
                       <p
