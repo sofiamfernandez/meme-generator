@@ -161,7 +161,7 @@ const Download = (e) => {
           {/* Breakpoint     */}
         <Col sm={12} md={6}>
         <Form>
-          <h2 className=' mt-3 mb-3'>Vista previa de tu meme: </h2>
+          <h2 className='text-center mt-3 mb-3'>Vista previa de tu meme: </h2>
             <Figure className="w-100">
                <div id="exportar">
                   <Figure.Caption>
