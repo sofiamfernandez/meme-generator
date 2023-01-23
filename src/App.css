@@ -3,3 +3,18 @@
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
+#dark {
+    background-color: #0f0b0b;
+}
+#dark label {
+    color: #FFF5E5;
+}
+#light {
+    background-color: #FFF5E5;
+}
+#light label {
+    color: #0f0b0b;
+}
+div.react-switch-bg {
+    background: linear-gradient(to right, #711A75, #F10086) !important;
+}

@@ -10,11 +10,10 @@
 body  {
   overflow-x: hidden;
   min-height: 100vh;
-  background-color: #0f0b0b !important;
+
 }
 
-
-h1, h2 {
+/* h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 900;
 }
@@ -30,18 +29,13 @@ h1.title span {
   color: transparent;  
   text-transform: uppercase;
   font-weight: bolder;
-}
-h2{
-  color: #F582A7;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
+} */
+
 p {
   font-family: 'Poppins', sans-serif;
   }
 label {
-  color: #FFF5E5;
+  /* color: #FFF5E5; */
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -111,8 +105,11 @@ input[type="range"]::-webkit-slider-thumb:active {
 #customRange2 {
   border-radius: 10px;
 }
-
-
+h1 {
+  color: #fff;
+  font-size: 4em !important;
+}
+h1,
 #texto-meme {
     /* width: auto; */
     padding-top: 20px;

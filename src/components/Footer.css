@@ -14,6 +14,7 @@ footer {
 .redes {
      display: flex;
      justify-content: space-around;
+     align-items: center;
      color: aliceblue;
      transition: all .4s ease-in-out;
 }
@@ -32,12 +33,12 @@ a.link {
     line-height:40px;
     margin-inline: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out !important;
 }
 a.link:hover {
     color:aliceblue;
-    background: linear-gradient(to right, #711A75, #F10086);
-    box-shadow:  2px 5px 5px rgb(245, 130, 167, 0.4);
+    background: #F10086;
+ 
 }
 .footer-text {
     color: #DFCDDB;
@@ -52,7 +53,7 @@ a.link:hover {
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
-    .text, .footer-text {
+    .logo, .text, .footer-text {
         text-align: center;
         margin-top: 1.5em;
         margin-bottom: 1.5em;

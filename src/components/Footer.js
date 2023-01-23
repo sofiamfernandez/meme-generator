@@ -17,7 +17,7 @@ export const Footer = () => {
                             src="../images/image.png"
                             width="70"
                             height="60"  
-                            className='img-responsive img-fluid m-auto'                     
+                            className='img-responsive img-fluid m-auto logo'                     
                         />{''}
                       Meme Generator
                     </Col>

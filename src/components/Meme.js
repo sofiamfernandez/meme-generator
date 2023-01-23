@@ -20,8 +20,9 @@ import "./Meme.css"
 
 export const Meme = () => {
 //Estado inicial del editor de meme
-const [meme, setMeme] = useState(25);
+const [meme, setMeme] = useState(26);
 const [text, setText] = useState();
+
 
 const [color, setColor] =useState('#FFFFFF');
 const [size, setSize] = useState('');
@@ -33,6 +34,7 @@ const selectMeme = (e) => {
     setMeme(e.target.value);
     console.log(e.target.value);
 }
+
 
 const textMeme = (e) => {
     setText(e.target.value);
@@ -64,12 +66,12 @@ const Download = (e) => {
   return (
     <Container className=''>
         <Row>
-        <h1 className='my-5 text-center title'><span>Crea tu propio meme</span></h1>
+        <h1 className='my-3 text-center title'><span>Crea tu meme</span></h1>
             <Col sm={12} md={6}>
               
               <Form className='text-center p-3'>
-              <Form.Label className='mb-3 '>Selecciona una imagen: </Form.Label>
-                  <Form.Select onChange={selectMeme} className='form-control form-select form-select-lg mb-3 w-100 m-auto' arial-label="dark">
+              <Form.Label className='mb-3 ' >Selecciona una imagen: </Form.Label>
+                  <Form.Select onChange={selectMeme}  className='form-control form-select form-select-lg mb-3 w-100 m-auto' arial-label="dark">
                       <option value={0}>Seleccionar imagen</option>
                       <option value={1}>Dicaprio</option>
                       <option value={2}>Futurama</option>
@@ -87,7 +89,9 @@ const Download = (e) => {
                       <option value={14}>Payaso IT</option>
                       <option value={15}>Toy Story</option>
                   </Form.Select>
-                  <Form.Label className='mt-3 mb-3 text-center'>Ingresa el texto: </Form.Label>
+
+                  
+                  <Form.Label className='mt-3 mb-3 text-center' >Ingresa el texto: </Form.Label>
                   <Form.Control 
                     onChange={textMeme} 
                     className='form-floating w-100 m-50 m-auto d-block' 
@@ -113,7 +117,7 @@ const Download = (e) => {
                   </InputGroup>
 
                   <InputGroup className='range'>
-                      <Form.Label htmlFor="customRange2" className="form-label">Elige el tamaño de la letra</Form.Label>
+                      <Form.Label htmlFor="customRange2" className="form-label" >Elige el tamaño de la letra</Form.Label>
                       <Form.Range
                          
                           type="range"
@@ -126,7 +130,7 @@ const Download = (e) => {
                          
                       ></Form.Range>
                       
-                      <Form.Label htmlFor="customRange2" className="form-label">Elige la posición horizontal <BsArrowLeft/> <BsArrowRight/></Form.Label>
+                      <Form.Label htmlFor="customRange2" className="form-label" >Elige la posición horizontal <BsArrowLeft/> <BsArrowRight/></Form.Label>
 
                       <Form.Range
                           type="range"
@@ -160,8 +164,9 @@ const Download = (e) => {
 
           {/* Breakpoint     */}
         <Col sm={12} md={6}>
-        <Form>
-          <h2 className='text-center mt-3 mb-3'>Vista previa de tu meme: </h2>
+        <Form className='p-3'>
+        <Form.Label htmlFor="customRange2" className="form-label mb-3">Vista previa :</Form.Label>
+
             <Figure className="w-100">
                <div id="exportar">
                   <Figure.Caption>
@@ -174,9 +179,10 @@ const Download = (e) => {
 
                   </Figure.Caption>
                   <Figure.Image
-                      src={`../images/${meme}.jpg`}
-                      className="img-responsive d-block m-auto" alt="meme">
+                    src={`../images/${meme}.jpg`}
+                    className="img-responsive d-block m-auto" alt="meme">
                   </Figure.Image>
+
               </div>
             </Figure>
           </Form>
