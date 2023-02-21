@@ -64,34 +64,57 @@ const Download = (e) => {
 }
 
   return (
-    <Container className=''>
+    <Container>
         <Row>
-        <h1 className='my-3 text-center title'><span>Crea tu meme</span></h1>
+          <h1 className='my-3 text-center title'><span>Crea tu meme</span></h1>
             <Col sm={12} md={6}>
-              
-              <Form className='text-center p-3'>
-              <Form.Label className='mb-3 ' >Selecciona una imagen: </Form.Label>
-                  <Form.Select onChange={selectMeme}  className='form-control form-select form-select-lg mb-3 w-100 m-auto' arial-label="dark">
-                      <option value={0}>Seleccionar imagen</option>
-                      <option value={1}>Dicaprio</option>
-                      <option value={2}>Futurama</option>
-                      <option value={3}>Bob Esponja</option>
-                      <option value={4}>Nena picarona</option>
-                      <option value={5}>Gato vegetales</option>
-                      <option value={6}>Cálculos</option>
-                      <option value={7}>Gato desobediente</option>
-                      <option value={8}>Homero</option>
-                      <option value={9}>Mujer</option>
-                      <option value={10}>Bon Esponja caja</option>
-                      <option value={11}>Derrapando</option>
-                      <option value={12}>Yo</option>
-                      <option value={13}>Dice mi mamá</option>
-                      <option value={14}>Payaso IT</option>
-                      <option value={15}>Toy Story</option>
-                  </Form.Select>
+                <Form className='p-3'>
+                  <Form.Label htmlFor="customRange2" className="form-label my-3">Vista previa :</Form.Label>
+                   <Figure className="w-100">
+                    <div id="exportar">
+                        <Figure.Caption>
+                            <p
+                                className="position-absolute w-100"
+                                id="texto-meme"
+                                style={myStyle}
 
+                            >{text}</p>
+
+                        </Figure.Caption>
+                        <Figure.Image
+                            src={`../images/${meme}.jpg`}
+                            className="img-responsive d-block m-auto" alt="meme">
+                        </Figure.Image>
+
+                    </div>
+                    </Figure>
+                    <Form.Label className='mb-3 mt-3' >Selecciona una imagen: </Form.Label>
+                     <Form.Select onChange={selectMeme}  className='form-control form-select form-select-lg mb-3 w-100 m-auto' arial-label="dark">
+                        <option value={26}>Seleccionar imagen</option>
+                        <option value={1}>Dicaprio</option>
+                        <option value={2}>Futurama</option>
+                        <option value={3}>Bob Esponja</option>
+                        <option value={4}>Nena picarona</option>
+                        <option value={5}>Gato vegetales</option>
+                        <option value={6}>Cálculos</option>
+                        <option value={7}>Gato desobediente</option>
+                        <option value={8}>Homero</option>
+                        <option value={9}>Mujer</option>
+                        <option value={10}>Bon Esponja caja</option>
+                        <option value={11}>Derrapando</option>
+                        <option value={12}>Yo</option>
+                        <option value={13}>Dice mi mamá</option>
+                        <option value={14}>Payaso IT</option>
+                        <option value={15}>Toy Story</option>
+                    </Form.Select>  
                   
-                  <Form.Label className='mt-3 mb-3 text-center' >Ingresa el texto: </Form.Label>
+                </Form>
+                       
+            </Col>
+            {/* Breakpoint     */}
+            <Col sm={12} md={6}>
+               <Form className='align-items-center p-3'>
+                  <Form.Label className='mt-3 mb-3' >Ingresa el texto: </Form.Label>
                   <Form.Control 
                     onChange={textMeme} 
                     className='form-floating w-100 m-50 m-auto d-block' 
@@ -103,8 +126,8 @@ const Download = (e) => {
                     name="meme">
                     </Form.Control>
 
-                  <Form.Label className='mt-3 mb-3 text-center'>Selecciona el color de tu frase: </Form.Label>
-                  <InputGroup className="mb-3 input-group w-50 m-50 m-auto d-block">
+                  <Form.Label className='mt-3 mb-3'>Selecciona el color de tu frase: </Form.Label>
+                  <InputGroup className="mb-3 input-group m-auto d-block  text-center">
                       <Badge bg='transparent'>
                           <Form.Control
                               name="color"
@@ -117,7 +140,7 @@ const Download = (e) => {
                   </InputGroup>
 
                   <InputGroup className='range'>
-                      <Form.Label htmlFor="customRange2" className="form-label" >Elige el tamaño de la letra</Form.Label>
+                      <Form.Label htmlFor="customRange2" className="form-label my-3" >Elige el tamaño de la letra</Form.Label>
                       <Form.Range
                          
                           type="range"
@@ -130,7 +153,7 @@ const Download = (e) => {
                          
                       ></Form.Range>
                       
-                      <Form.Label htmlFor="customRange2" className="form-label" >Elige la posición horizontal <BsArrowLeft/> <BsArrowRight/></Form.Label>
+                      <Form.Label htmlFor="customRange2" className="form-label my-3" >Elige la posición horizontal <BsArrowLeft/> <BsArrowRight/></Form.Label>
 
                       <Form.Range
                           type="range"
@@ -141,10 +164,7 @@ const Download = (e) => {
                           onChange={(e) => setPositionX(e.target.value)}
                           step={1}
                       ></Form.Range>
-
-
-
-                        <Form.Label htmlFor="customRange2" className="form-label">Elige la posición vertical <BsArrowDownUp/></Form.Label>
+                        <Form.Label htmlFor="customRange2" className="form-label my-3">Elige la posición vertical <BsArrowDownUp/></Form.Label>
 
                         <Form.Range
                             type="range"
@@ -155,42 +175,12 @@ const Download = (e) => {
                             onChange={(e) => setPositionY(e.target.value)}
                             step={1}
                         ></Form.Range>
-
                   </InputGroup>
-
-                 
-           </Form>
-        </Col>
-
-          {/* Breakpoint     */}
-        <Col sm={12} md={6}>
-        <Form className='p-3'>
-        <Form.Label htmlFor="customRange2" className="form-label mb-3">Vista previa :</Form.Label>
-
-            <Figure className="w-100">
-               <div id="exportar">
-                  <Figure.Caption>
-                      <p
-                          className="position-absolute w-100"
-                          id="texto-meme"
-                          style={myStyle}
-
-                      >{text}</p>
-
-                  </Figure.Caption>
-                  <Figure.Image
-                    src={`../images/${meme}.jpg`}
-                    className="img-responsive d-block m-auto" alt="meme">
-                  </Figure.Image>
-
-              </div>
-            </Figure>
-          </Form>
-        
-          <div className='d-flex justify-content-center mb-3'>
-              <Button onClick={Download} className='btn gradient-button mb-3 text-center'>Descarga tu meme</Button>
-          </div>
-          </Col>
+                  <div className='d-flex justify-content-center my-5'>
+                    <Button onClick={Download} className='bn30 gradient-button mb-3 text-center'>Descarga tu meme</Button>
+                </div>
+               </Form>
+            </Col>   
         </Row>  
     </Container> 
   )

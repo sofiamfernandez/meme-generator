@@ -22,7 +22,7 @@ export const Footer = () => {
                       Meme Generator
                     </Col>
                     <Col md={4} sm={12} className='redes py-3'>
-                        <div className='social d-flex align-items-center '>
+                        <div className='social link d-flex align-items-center '>
                             <a href='https://www.linkedin.com/in/sofia-m-fernandez-lacroux/' target="_blank" rel="noopener noreferrer" className='link'> <BsLinkedin/></a>
                             <a href='https://github.com/sofiamfernandez' target="_blank" rel="noopener noreferrer" className='link'><BsGithub/></a>
                             <a href='https://www.instagram.com/sofia.m.fernandez/' target="_blank" rel="noopener noreferrer" className='link'>  <BsInstagram/></a>    

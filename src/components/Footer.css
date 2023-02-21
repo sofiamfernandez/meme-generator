@@ -3,7 +3,9 @@ footer {
     display: flex;
 
 }
-
+.bg-dark {
+    --bs-bg-opacity: 0.1 !important;
+}
 .text {
     font-family: 'Inter', sans-serif;
     font-size: 1em;
@@ -16,11 +18,11 @@ footer {
      justify-content: space-around;
      align-items: center;
      color: aliceblue;
-     transition: all .4s ease-in-out;
+   
 }
-.social {
+a.social {
     justify-content: space-around;
-    transition: all .4s ease-in-out;
+ 
 }
 
 a.link {
@@ -33,11 +35,12 @@ a.link {
     line-height:40px;
     margin-inline: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out !important;
+    
 }
+
 a.link:hover {
-    color:aliceblue;
-    background: #F10086;
+    color:aliceblue !important;
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3) !important;
  
 }
 .footer-text {

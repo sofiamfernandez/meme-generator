@@ -20,7 +20,7 @@ function App() {
     <ThemeContext.Provider value={{theme , toggleTheme}}>
       <div className='app' id={theme}>
           
-         <Navbar bg="dark" variant="dark">
+         <Navbar  bg="dark" variant="dark">
           <Container>
             <Navbar.Brand href="#home">
               <img
