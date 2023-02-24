@@ -2,6 +2,16 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    max-width: 100% !important;
+    overflow-x: hidden;
+}
+#dark > nav > div > div > div > span.switch-on.btn.btn-dark.btn-sm,
+#light > nav > div > div > div > span.switch-off.btn.btn-light.btn-sm {
+    line-height: calc(28px) !important;
+}
+.switch-on.btn-sm, .switch-off.btn-sm {
+    padding-right: 42px !important;
+    
 }
 #dark {
     background-color: #121212;
@@ -15,6 +25,27 @@
 #light label {
     color: rgba(0, 0, 0, 0.87);
 }
-div.react-switch-bg {
-    background-image: linear-gradient(45deg, #4568dc, #b06ab3) !important;
+#light nav.navbar {
+    background-color: #BB69AB !important;
+}
+#light .footer {
+    background-color: #BB69AB !important;
+}
+#light .brand {
+    color: #FFF5E5;
+}
+#light a.link {
+    background-color: #4568dc;
+}
+#light a.link:hover {
+    background-color: #121212 !important;
+}
+#light .footer-text {
+    color: #FFF5E5;
+}
+#light .firma:hover {
+    color: #121212;
+}
+svg {
+    font-size: 16px;
 }

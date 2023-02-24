@@ -12,7 +12,7 @@ import { Badge } from 'react-bootstrap';
 
 import Container from 'react-bootstrap/Container';
 
-
+// import { UploadImage } from './UploadImage';
 
 import "./Meme.css"
 
@@ -69,6 +69,25 @@ const Download = (e) => {
           <h1 className='my-3 text-center title'><span>Crea tu meme</span></h1>
             <Col sm={12} md={6}>
                 <Form className='p-3'>
+                <Form.Label className='mb-3 mt-3' >Selecciona una imagen: </Form.Label>
+                     <Form.Select onChange={selectMeme}  className='form-control form-select form-select-lg mb-3 w-100 m-auto' arial-label="dark">
+                        <option value={26}>Seleccionar imagen</option>
+                        <option value={1}>Dicaprio</option>
+                        <option value={2}>Futurama</option>
+                        <option value={3}>Bob Esponja</option>
+                        <option value={4}>Nena picarona</option>
+                        <option value={5}>Gato vegetales</option>
+                        <option value={6}>Cálculos</option>
+                        <option value={7}>Gato desobediente</option>
+                        <option value={8}>Homero</option>
+                        <option value={9}>Mujer</option>
+                        <option value={10}>Bon Esponja caja</option>
+                        <option value={11}>Derrapando</option>
+                        <option value={12}>Yo</option>
+                        <option value={13}>Dice mi mamá</option>
+                        <option value={14}>Payaso IT</option>
+                        <option value={15}>Toy Story</option>
+                    </Form.Select>  
                   <Form.Label htmlFor="customRange2" className="form-label my-3">Vista previa :</Form.Label>
                    <Figure className="w-100">
                     <div id="exportar">
@@ -88,26 +107,8 @@ const Download = (e) => {
 
                     </div>
                     </Figure>
-                    <Form.Label className='mb-3 mt-3' >Selecciona una imagen: </Form.Label>
-                     <Form.Select onChange={selectMeme}  className='form-control form-select form-select-lg mb-3 w-100 m-auto' arial-label="dark">
-                        <option value={26}>Seleccionar imagen</option>
-                        <option value={1}>Dicaprio</option>
-                        <option value={2}>Futurama</option>
-                        <option value={3}>Bob Esponja</option>
-                        <option value={4}>Nena picarona</option>
-                        <option value={5}>Gato vegetales</option>
-                        <option value={6}>Cálculos</option>
-                        <option value={7}>Gato desobediente</option>
-                        <option value={8}>Homero</option>
-                        <option value={9}>Mujer</option>
-                        <option value={10}>Bon Esponja caja</option>
-                        <option value={11}>Derrapando</option>
-                        <option value={12}>Yo</option>
-                        <option value={13}>Dice mi mamá</option>
-                        <option value={14}>Payaso IT</option>
-                        <option value={15}>Toy Story</option>
-                    </Form.Select>  
                   
+                    {/* <UploadImage /> */}
                 </Form>
                        
             </Col>
@@ -120,7 +121,7 @@ const Download = (e) => {
                     className='form-floating w-100 m-50 m-auto d-block' 
                     as="textarea" 
                     aria-label="textarea" 
-                    maxlength="30" 
+                    maxLength="30" 
                     type="text" 
                     placeholder="Pone tu frase" required 
                     name="meme">

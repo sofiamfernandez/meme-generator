@@ -8,7 +8,7 @@ import './Footer.css'
 
 export const Footer = () => {
   return (
-    <Container fluid className='bg-dark mt-3 d-flex mb-0 w-100'>
+    <Container fluid className='footer bg-dark mt-2 d-flex mb-0 w-100'>
             <Container>
                 <Row>
                     <Col md={4} sm={12} className='brand text pt-3 '>
@@ -33,10 +33,10 @@ export const Footer = () => {
                    
                     by 
                     <a className='firma' href='https://www.sofiamfernandez.com/' target="_blank" rel="noopener noreferrer">
-                    <span className='firma px-1'>Sophie Ferdz <SiReact/></span></a>
+                    <span className='firma px-2 '><b>Sophie Ferdz <SiReact/></b></span></a>
                     </Col>
                 </Row>
             </Container>
-    </Container>
+    </Container >
   )
 }

@@ -5,7 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
 import { createContext, useState } from 'react';
-import ReactSwitch from "react-switch";
+import BootstrapSwitchButton from 'bootstrap-switch-button-react';
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export const ThemeContext = createContext(null);
 
@@ -19,9 +20,9 @@ function App() {
   return (
     <ThemeContext.Provider value={{theme , toggleTheme}}>
       <div className='app' id={theme}>
-          
+    
          <Navbar  bg="dark" variant="dark">
-          <Container>
+         <Container>
             <Navbar.Brand href="#home">
               <img
                 alt="logo"
@@ -32,10 +33,24 @@ function App() {
               />{' '}
               Meme Generator
             </Navbar.Brand>
-            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} /> 
+           
+ 
+            <BootstrapSwitchButton 
+              className='switch'
+              checked={theme === "dark"} 
+              onChange={toggleTheme} 
+              onstyle="dark" 
+              offstyle="light" 
+              // style="border"
+              onlabel=<BsFillMoonFill/>
+              offlabel=<BsFillSunFill/>
+              size='sm'
+              width={40} height={40}
+             
+            />
             </Container>
           </Navbar>
-               
+              
           <Meme />
           <Footer />
       </div>
